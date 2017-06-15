@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { getPopularMovies } from '../state/actions'
+import { getPopularMovies } from '../actions/actions'
 
 class GetMoviesBtn extends React.Component {
   constructor (props) {
@@ -10,7 +10,6 @@ class GetMoviesBtn extends React.Component {
 
   _requestMovies () {
     const { dispatch } = this.props
-
     dispatch(getPopularMovies())
   }
 

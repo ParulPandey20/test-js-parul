@@ -1,0 +1,59 @@
+body{
+	background-color: #C0C0C0;
+}
+
+h2,	 h3 {
+	text-align: center;
+}
+
+.movieContainer {
+	width: 80%;
+	margin: 50px auto;
+	overflow: hidden;
+	max-height: 350;	
+}
+
+.movieContentParent {
+	overflow: hidden;
+    position: relative;
+    min-height:200px;
+    margin: auto;
+}
+
+img {
+	height: 350px;
+    width: 100%;
+}
+
+.movieImageContent {
+	width: 40%;
+	overflow: hidden;
+	height:350px;
+}
+
+.movieContent {
+    height: 100%;
+    background-color: White;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    min-height:200px;
+}
+
+@media(max-width: 600px){
+
+	.movieImageContent {
+		width: 100%;
+	}
+
+	.movieContent {
+		width: 100%;
+		margin-top: -20px;
+		position: static;
+	}
+
+	.movieContentParent {
+    	position: static;
+	}
+}

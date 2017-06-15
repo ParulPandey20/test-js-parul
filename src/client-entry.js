@@ -5,8 +5,8 @@ import { createStore, applyMiddleware } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import { Provider } from 'react-redux'
 
-import rootReducer from './state/reducer'
-
+//import rootReducer from './state/reducer'
+import rootReducer from './reducers/root-reducer'
 import App from './components/app'
 
 // You can import stylesheets here
